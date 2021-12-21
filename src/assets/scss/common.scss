@@ -1,0 +1,37 @@
+$color-main: #f55656;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.title-main {
+  font-size: 44px;
+  text-transform: capitalize;
+  margin: 40px auto 50px auto;
+  text-align: center;
+  h3 {
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 24px;
+    &::after {
+      position: absolute;
+      content: "";
+      border: 2px solid $color-main;
+      width: 30%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

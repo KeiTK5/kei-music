@@ -1,0 +1,68 @@
+.form-register {
+  background-image: url("./form/form.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  &::before {
+    position: absolute;
+    content: "";
+    background: black;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .title-form {
+    padding: 50px 0;
+    z-index: 333;
+    .title {
+      color: #ffffff;
+      font-size: 48px;
+      margin-bottom: 5px;
+    }
+    .sub-title {
+      color: #ffffff;
+    }
+  }
+
+  .form {
+    z-index: 333;
+
+    form {
+      display: flex;
+      border-radius: 32px;
+      overflow: hidden;
+      .form-control {
+        height: 45px;
+        input {
+          height: 100%;
+          border: none;
+          outline: none;
+          padding: 0 32px;
+          max-width: 300px;
+          width: 280px;
+        }
+        button {
+          height: 100%;
+          font-weight: 600;
+          letter-spacing: 1px;
+          padding: 0 16px;
+          width: 140px;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 0 30px 30px 0;
+          line-height: 47px;
+          z-index: 10;
+          background-color: #f55656;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
